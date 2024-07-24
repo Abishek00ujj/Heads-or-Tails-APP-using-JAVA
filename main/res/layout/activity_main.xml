@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    android:soundEffectsEnabled="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@android:style/Widget.Material.TextView"
+        android:layout_width="250dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="64dp"
+        android:shadowColor="#0D0000"
+        android:text="Heads Or Tails"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/headbtn"
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:layout_width="103dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="136dp"
+        android:backgroundTint="#000000"
+        android:bufferType="normal"
+        android:onClick="head"
+        android:outlineAmbientShadowColor="#000000"
+        android:text="HEADS"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/tailbtn"
+        style="@style/Animation.Design.BottomSheetDialog"
+        android:layout_width="109dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="136dp"
+        android:backgroundTint="#000000"
+        android:onClick="tail"
+        android:text="TAILS"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#ED0000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toEndOf="@+id/headbtn" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.172"
+        app:srcCompat="@drawable/head" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="425dp"
+        android:layout_height="65dp"
+        android:text="Choose your Ghess!"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img"
+        app:layout_constraintVertical_bias="0.127" />
+
+    <TextView
+        android:id="@+id/github"
+        android:layout_width="242dp"
+        android:layout_height="23dp"
+        android:text="@string/link"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tailbtn"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

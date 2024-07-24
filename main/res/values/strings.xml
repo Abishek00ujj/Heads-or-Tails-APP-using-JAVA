@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">heads or tails</string>
+    <string name="link">
+        Copyright © 2024 by <a href="https://github.com/Abishek00ujj">Abishek</a></string>
+</resources>
